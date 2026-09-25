@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Materials Shop — Atoka Construction</title>
+  <meta name="description" content="Buy cement, bricks, steel, roofing, plumbing, electrical and finishes online from Atoka's Msasa yard. Bulk pricing, trade quotes and nationwide delivery.">
+  <meta name="theme-color" content="#f7f7f7">
+  <link rel="icon" href="assets/img/mark.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@300..800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+</head>
+<body data-page="shop">
+<header class="site-header"></header>
+
+<main>
+  <section class="page-hero">
+    <div class="wrap">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span><span>Shop</span></nav>
+      <div class="ph-grid">
+        <h1 class="display h-xl"><span class="split-line"><span>Shop<span class="dot">.</span></span></span></h1>
+        <div class="rv">
+          <p class="lead" style="margin:0 0 18px">Building materials from the Atoka yard in Msasa — the same stock we build with, at bulk-friendly prices.</p>
+          <label class="search" for="q">
+            <span data-ico="search"></span>
+            <input id="q" type="search" placeholder="Search cement, IBR, Y12, paint…" autocomplete="off" data-search>
+            <button type="button" class="search-x" data-search-x aria-label="Clear search" hidden></button>
+          </label>
+        </div>
+      </div>
+      <div class="perks rv">
+        <div><span data-ico="truck"></span><b>Nationwide delivery</b><small>$5 + $0.65/km from Msasa</small></div>
+        <div><span data-ico="calc"></span><b>Bulk pricing</b><small>Up to −12% on volume</small></div>
+        <div><span data-ico="doc"></span><b>Trade quotes</b><small>Turn any cart into a quote</small></div>
+        <div><span data-ico="shield"></span><b>Quality checked</b><small>Stock we build with ourselves</small></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec-tight" style="padding-top:10px">
+    <div class="wrap">
+      <div class="cat-pills" data-cats role="tablist" aria-label="Categories"></div>
+      <div class="sub-pills" data-subs></div>
+
+      <div class="shop-layout">
+        <aside class="filters" data-filters aria-label="Filters">
+          <div class="filters-head"><h3>Filters</h3><button class="icon-btn filters-close" data-filters-close aria-label="Close filters"></button></div>
+          <div class="f-group"><h4>Brand</h4><div data-brands class="f-list"></div></div>
+          <div class="f-group"><h4>Price (USD)</h4>
+            <div class="row-2" style="gap:8px"><input class="input" type="number" min="0" placeholder="Min" data-min aria-label="Minimum price"><input class="input" type="number" min="0" placeholder="Max" data-max aria-label="Maximum price"></div>
+          </div>
+          <div class="f-group"><h4>Availability</h4>
+            <label class="check"><input type="checkbox" data-flag="sale"> On sale</label>
+            <label class="check"><input type="checkbox" data-flag="stock"> In stock only</label>
+            <label class="check"><input type="checkbox" data-flag="bulk"> Bulk discount available</label>
+          </div>
+          <div class="f-group"><h4>Rating</h4>
+            <div class="seg" data-rating><button data-r="0" class="on">Any</button><button data-r="4.5">4.5★+</button><button data-r="4.7">4.7★+</button></div>
+          </div>
+          <button class="btn btn-line btn-block" data-clear-all>Clear all filters</button>
+          <button class="btn btn-navy btn-block filters-apply" data-filters-close>Show results</button>
+        </aside>
+
+        <div class="results">
+          <div class="toolbar">
+            <button class="btn btn-line btn-sm filters-toggle" data-filters-open><span data-ico="filter" style="width:15px;display:inline-flex"></span>Filters <span class="fcount" data-fcount></span></button>
+            <p class="count" data-count aria-live="polite"></p>
+            <label class="sort">Sort
+              <select class="select" data-sort aria-label="Sort products">
+                <option value="featured">Featured</option><option value="new">Newest</option><option value="price-asc">Price: low to high</option>
+                <option value="price-desc">Price: high to low</option><option value="rating">Top rated</option><option value="name">Name A–Z</option>
+              </select>
+            </label>
+          </div>
+          <div class="active-chips" data-chips></div>
+          <div class="p-grid" data-grid></div>
+          <nav class="pager" data-pager aria-label="Pagination"></nav>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- material calculator -->
+  <section class="sec-tight" id="calculator">
+    <div class="wrap">
+      <div class="calc panel rv">
+        <div class="calc-intro">
+          <span class="eyebrow">Material calculator</span>
+          <h2 class="display h-md" style="margin:14px 0 14px">How much<br>do I need?</h2>
+          <p class="muted">Enter your dimensions and we'll work out quantities — including a 5% waste allowance — then add everything to your cart in one click.</p>
+          <div class="seg calc-tabs" data-calc-tabs><button class="on" data-c="wall">Brick wall</button><button data-c="slab">Concrete slab</button><button data-c="paint">Painting</button></div>
+        </div>
+        <div class="calc-body">
+          <form class="calc-form" data-calc-form></form>
+          <div class="calc-out" data-calc-out></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec-tight">
+    <div class="wrap">
+      <div class="cta-band rv" style="grid-template-columns:1.4fr 1fr;align-items:center">
+        <div style="position:relative;z-index:1"><h2 class="display h-md">Can't find<br>what you need<span class="dot">?</span></h2><p style="margin:14px 0 0">Our yard stocks far more than we list online. Send us your bill of quantities and we'll price it.</p></div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;position:relative;z-index:1;justify-content:flex-end">
+          <a class="btn btn-amber btn-lg" data-wa-boq target="_blank" rel="noopener">Send a BOQ on WhatsApp</a>
+          <a class="btn btn-lg" style="background:rgba(255,255,255,.1);color:#fff" data-call>Call the yard</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer"></footer>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/core.js"></script>
+<script src="assets/js/ui.js"></script>
+<script src="assets/js/shop.js"></script>
+</body>
+</html>
